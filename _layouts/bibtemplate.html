@@ -22,31 +22,38 @@
       <div class="title">{{entry.title}}</div>
       <div class="author">
         {% for author in entry.author_array %}
-        {% if forloop.length == 1 %}
-        {% if author.first == site.scholar.first_name %}
-              <em>{{author.first}} {{author.last}}</em>
-            {% else %}
-              {{author.first}} {{author.last}}
-            {% endif %}
-          {% else %}
-              {% unless forloop.last %}
-              {% if author.first == site.scholar.first_name %}       
-                <em>{{author.first}} {{author.last}}</em>,
+
+        {% if entry.equal_last contains author.last %}
+        {% assign last_with_star = author.last | append: "*" %}
+        {% else %}
+        {% assign last_with_star = author.last %}
+        {% endif %}
+
+           {% if forloop.length == 1 %}
+              {% if author.last == site.scholar.last_name %}
+                 <em>{{author.first}} {{last_with_star}}</em>
               {% else %}
-                {% if site.data.coauthors[author.last] %}
-                  <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.first}} {{author.last}}</a>,
+                 {{author.first}} {{last_with_star}}
+              {% endif %}
+           {% else %}
+              {% unless forloop.last %}
+              {% if author.last == site.scholar.last_name %}       
+                <em>{{author.first}} {{last_with_star}}</em>,
+              {% else %}
+                {% if site.data.coauthors[last_with_star] %}
+                  <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.first}} {{last_with_star}}</a>,
                 {% else %}
-                  {{author.first}} {{author.last}},
+                  {{author.first}} {{last_with_star}},
                 {% endif %}
               {% endif %}
                   {% else %}
-                  {% if author.first == site.scholar.first_name %}
-                and <em>{{author.first}} {{author.last}}</em>
+                  {% if author.last == site.scholar.last_name %}
+                and <em>{{author.first}} {{last_with_star}}</em>
               {% else %}
                 {% if site.data.coauthors[author.last] %}
-                  and <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.first}} {{author.last}}</a>
+                  and <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.first}} {{last_with_star}}</a>
                 {% else %}
-                  and {{author.first}} {{author.last}}
+                  and {{author.first}} {{last_with_star}}
                 {% endif %}
               {% endif %}
             {% endunless %}
