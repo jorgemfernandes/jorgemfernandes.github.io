@@ -18,6 +18,7 @@ html = {http://proceedings.mlr.press/v108/cao20a.html},
 abstract = {In this work, we develop a novel regularizer to improve the learning of long-range dependency of sequence data. Applied on language modelling, our regularizer expresses the inductive bias that sequence variables should have high mutual information even though the model might not see abundant observations for complex long-range dependency. We show how the “next sentence prediction (classification)" heuristic can be derived in a principled way from our mutual information estimation framework, and be further extended to maximize the mutual information of sequence variables. The proposed approach not only is effective at increasing the mutual information of segments under the learned model but more importantly, leads to a higher likelihood on holdout data, and improved generation quality. Code is releasedat https://github.com/BorealisAI/BMI.},
 arxiv={1905.11978},
 code={https://github.com/BorealisAI/BMI},
+selected={true},
 }
 
 @InProceedings{pmlr-v119-huang20c,
@@ -36,6 +37,7 @@ html = {http://proceedings.mlr.press/v119/huang20c.html},
 abstract = {The field of deep generative modeling has succeeded in producing astonishingly realistic-seeming images and audio, but quantitative evaluation remains a challenge. Log-likelihood is an appealing metric due to its grounding in statistics and information theory, but it can be challenging to estimate for implicit generative models, and scalar-valued metrics give an incomplete picture of a model’s quality. In this work, we propose to use rate distortion (RD) curves to evaluate and compare deep generative models. While estimating RD curves is seemingly even more computationally demanding than log-likelihood estimation, we show that we can approximate the entire RD curve using nearly the same computations as were previously used to achieve a single log-likelihood estimate. We evaluate lossy compression rates of VAEs, GANs, and adversarial autoencoders (AAEs) on the MNIST and CIFAR10 datasets. Measuring the entire RD curve gives a more complete picture than scalar-valued metrics, and we arrive at a number of insights not obtainable from log-likelihoods alone.},
 arxiv={2008.06653},
 code={https://github.com/huangsicong/rate_distortion},
+selected={true},
 }
 
 @InProceedings{pmlr-v119-xu20a,
@@ -54,6 +56,7 @@ abstract = {The variational autoencoder (VAE) can learn the manifold of natural 
 html={http://proceedings.mlr.press/v119/xu20a.html},
 arxiv={1905.11975},
 code={https://github.com/BorealisAI/CP-VAE},
+selected={true},
 }
 
 @article{deng2020variational,
@@ -96,7 +99,8 @@ abbr={ACL},
     pages = "678--687",
     abstract = {Coherence is an important aspect of text quality and is crucial for ensuring its readability. One important limitation of existing coherence models is that training on one domain does not easily generalize to unseen categories of text. Previous work advocates for generative models for cross-domain generalization, because for discriminative models, the space of incoherent sentence orderings to discriminate against during training is prohibitively large. In this work, we propose a local discriminative neural model with a much smaller negative sampling space that can efficiently learn against incorrect orderings. The proposed coherence model is simple in structure, yet it significantly outperforms previous state-of-art methods on a standard benchmark dataset on the Wall Street Journal corpus, as well as in multiple new challenging settings of transfer to unseen categories of discourse on Wikipedia articles.},
     arxiv={1905.11912},
-    code={https://github.com/BorealisAI/cross_domain_coherence}
+    code={https://github.com/BorealisAI/cross_domain_coherence},
+    selected={true},
 }
 
 @article{wen2018few,
@@ -128,7 +132,8 @@ Year = {2018},
 html = {https://openreview.net/forum?id=BkLhaGZRW},
 arxiv={1805.03644},
 code={https://github.com/BorealisAI/bre-gan},
-abstract={We propose a novel regularizer to improve the training of Generative Adversarial Networks (GANs). The motivation is that when the discriminator D spreads out its model capacity in the right way, the learning signals given to the generator G are more informative and diverse. These in turn help G to explore better and discover the real data manifold while avoiding large unstable jumps due to the erroneous extrapolation made by D. Our regularizer guides the rectifier discriminator D to better allocate its model capacity, by encouraging the binary activation patterns on selected internal layers of D to have a high joint entropy. Experimental results on both synthetic data and real datasets demonstrate improvements in stability and convergence speed of the GAN training, as well as higher sample quality. The approach also leads to higher classification accuracies in semi-supervised learning.}
+abstract={We propose a novel regularizer to improve the training of Generative Adversarial Networks (GANs). The motivation is that when the discriminator D spreads out its model capacity in the right way, the learning signals given to the generator G are more informative and diverse. These in turn help G to explore better and discover the real data manifold while avoiding large unstable jumps due to the erroneous extrapolation made by D. Our regularizer guides the rectifier discriminator D to better allocate its model capacity, by encouraging the binary activation patterns on selected internal layers of D to have a high joint entropy. Experimental results on both synthetic data and real datasets demonstrate improvements in stability and convergence speed of the GAN training, as well as higher sample quality. The approach also leads to higher classification accuracies in semi-supervised learning.},
+selected={true},
 }
 
 @article{wang2018adversarial,
@@ -160,6 +165,7 @@ abbr={ACL},
     arxiv = {1805.03642},
     html={https://www.aclweb.org/anthology/P18-1094/},
     abstract = "Learning by contrasting positive and negative samples is a general strategy adopted by many methods. Noise contrastive estimation (NCE) for word embeddings and translating embeddings for knowledge graphs are examples in NLP employing this approach. In this work, we view contrastive learning as an abstraction of all such methods and augment the negative sampler into a mixture distribution containing an adversarially learned sampler. The resulting adaptive sampler finds harder negative examples, which forces the main model to learn a better representation of the data. We evaluate our proposal on learning word embeddings, order embeddings and knowledge graph embeddings and observe both faster convergence and improved results on multiple metrics.",
+    selected={true},
 }
 
 @phdthesis{Cao_Yanshuai_PhD_thesis,
