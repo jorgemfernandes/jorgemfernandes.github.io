@@ -63,12 +63,13 @@ blog_name:  # your blog must have a name for it to show up in the nav bar
 blog_description: #a simple whitespace theme for academics
 permalink: # /blog/:year/:title/
 
+
 # Pagination
 pagination:
   enabled: true
 
 # Comments
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname: #al-folio # put your disqus shortname
 
 # -----------------------------------------------------------------------------
 # Collections
@@ -83,6 +84,7 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+
 
 news_limit: 5
 
@@ -106,7 +108,7 @@ kramdown:
 
 # Includes & excludes
 include: ['_pages']
-exclude: [vendor,'_pages/projects.md']
+exclude: [vendor, '_pages/projects.md']
 
 # Plug-ins
 plugins:
