@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description: Ph.D. | Research Team Lead @<a href="https://www.borealisai.com">Borealis AI (RBC)</a>
+description: Ph.D. | Senior Research Team Lead @<a href="https://www.borealisai.com">Borealis AI (RBC)</a>
 
 profile:
   align: right
