@@ -1,30 +1,98 @@
 ---
 ---
-@article{norouzi2021semantic,
-      abbr={Preprint},
-      title={Semantic Parsing with Less Prior and More Monolingual Data},
-      author={Sajad Norouzi and Yanshuai Cao},
-      year={2021},
-      eprint={2101.00259},
-      journal={arXiv preprint arXiv:2101.00259},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      abstract={Semantic parsing is the task of converting natural language utterances to machine-understandable meaning representations, such as logic forms or programming languages. Training datasets for semantic parsing are typically small due to the higher expertise required for annotation than most other NLP tasks. As a result, models for this application usually require additional prior knowledge to be built into the architecture or algorithm. The increased dependency on human experts hinders automation and raises the development and maintenance costs in practice. This work investigates whether a generic transformer-based seq2seq model can achieve competitive performance with minimal semantic-parsing specific inductive bias design. By exploiting a relatively large monolingual corpus of the target programming language, which is cheap to mine from the web, unlike a parallel corpus, we achieved 80.75\% exact match accuracy on Django and 32.57 BLEU score on CoNaLa, both are SOTA to the best of our knowledge. This positive evidence highlights a potentially easier path toward building accurate semantic parsers in the wild.},
-      arxiv={2101.00259},
+
+@inproceedings{norouzi-etal-2021-code,
+abbr={ACL},
+    title = "Code Generation from Natural Language with Less Prior Knowledge and More Monolingual Data",
+    author = "Norouzi, Sajad  and
+      Tang, Keyi  and
+      Cao, Yanshuai",
+    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.acl-short.98",
+    doi = "10.18653/v1/2021.acl-short.98",
+    pages = "776--785",
+    abstract = "Training datasets for semantic parsing are typically small due to the higher expertise required for annotation than most other NLP tasks. As a result, models for this application usually need additional prior knowledge to be built into the architecture or algorithm. The increased dependency on human experts hinders automation and raises the development and maintenance costs in practice. This work investigates whether a generic transformer-based seq2seq model can achieve competitive performance with minimal code-generation-specific inductive bias design. By exploiting a relatively sizeable monolingual corpus of the target programming language, which is cheap to mine from the web, we achieved 81.03{\%} exact match accuracy on Django and 32.57 BLEU score on CoNaLa. Both are SOTA to the best of our knowledge. This positive evidence highlights a potentially easier path toward building accurate semantic parsers in practice.",
+    code={https://github.com/BorealisAI/code-gen-TAE},
+    selected={true},
+    html = {https://aclanthology.org/2021.acl-short.98/},
 }
 
-@article{xu2020optimizing,
-abbr={Preprint},
-      title={Optimizing Deeper Transformers on Small Datasets: An Application on Text-to-SQL Semantic Parsing}, 
-      author={Peng Xu and Wei Yang and Wenjie Zi and Keyi Tang and Chengyang Huang and Jackie Chi Kit Cheung and Yanshuai Cao},
-      year={2020},
-      journal={arXiv preprint arXiv:2012.15355},
-      eprint={2012.15355},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      abstract={Due to the common belief that training deep transformers from scratch requires large datasets, people usually only use shallow and simple additional layers on top of pre-trained models during fine-tuning on small datasets. We provide evidence that this does not always need to be the case: with proper initialization and training techniques, the benefits of very deep transformers are shown to carry over to hard structural prediction tasks, even using small datasets. In particular, we successfully train 48 layers of transformers for a semantic parsing task. These comprise 24 fine-tuned transformer layers from pre-trained RoBERTa and 24 relation-aware transformer layers trained from scratch. With fewer training steps and no task-specific pre-training, we obtain the state of the art performance on the challenging cross-domain Text-to-SQL semantic parsing benchmark Spider. We achieve this by deriving a novel Data dependent Transformer Fixed-update initialization scheme (DT-Fixup), inspired by the prior T-Fixup work. Further error analysis demonstrates that increasing the depth of the transformer model can help improve generalization on the cases requiring reasoning and structural understanding.},
-      arxiv={2012.15355}
+@inproceedings{xu-etal-2021-optimizing,
+abbr={ACL},
+    title = "Optimizing Deeper Transformers on Small Datasets",
+    author = "Xu, Peng  and
+      Kumar, Dhruv  and
+      Yang, Wei  and
+      Zi, Wenjie  and
+      Tang, Keyi  and
+      Huang, Chenyang  and
+      Cheung, Jackie Chi Kit  and
+      Prince, Simon J.D.  and
+      Cao, Yanshuai",
+    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.acl-long.163",
+    doi = "10.18653/v1/2021.acl-long.163",
+    pages = "2089--2102",
+    html={https://aclanthology.org/2021.acl-long.163},
+    abstract = "It is a common belief that training deep transformers from scratch requires large datasets. Consequently, for small datasets, people usually use shallow and simple additional layers on top of pre-trained models during fine-tuning. This work shows that this does not always need to be the case: with proper initialization and optimization, the benefits of very deep transformers can carry over to challenging tasks with small datasets, including Text-to-SQL semantic parsing and logical reading comprehension. In particular, we successfully train 48 layers of transformers, comprising 24 fine-tuned layers from pre-trained RoBERTa and 24 relation-aware layers trained from scratch. With fewer training steps and no task-specific pre-training, we obtain the state of the art performance on the challenging cross-domain Text-to-SQL parsing benchmark Spider. We achieve this by deriving a novel Data dependent Transformer Fixed-update initialization scheme (DT-Fixup), inspired by the prior T-Fixup work. Further error analysis shows that increasing depth can help improve generalization on small datasets for hard cases that require reasoning and structural understanding.",
+    code={https://github.com/BorealisAI/DT-Fixup},
+    selected={true},
 }
+
+@inproceedings{xu-etal-2021-turing,
+abbr={ACL-Demo},
+    title = "{TURING}: an Accurate and Interpretable Multi-Hypothesis Cross-Domain Natural Language Database Interface",
+    author = "Xu, Peng  and
+      Zi, Wenjie  and
+      Shahidi, Hamidreza  and
+      K{\'a}d{\'a}r, {\'A}kos  and
+      Tang, Keyi  and
+      Yang, Wei  and
+      Ateeq, Jawad  and
+      Barot, Harsh  and
+      Alon, Meidan  and
+      Cao, Yanshuai",
+    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics: System Demonstrations",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.acl-demo.36",
+    doi = "10.18653/v1/2021.acl-demo.36",
+    pages = "298--305",
+    html={https://www.borealisai.com/en/applying-ai/turing/},
+    abstract = "A natural language database interface (NLDB) can democratize data-driven insights for non-technical users. However, existing Text-to-SQL semantic parsers cannot achieve high enough accuracy in the cross-database setting to allow good usability in practice. This work presents TURING, a NLDB system toward bridging this gap. The cross-domain semantic parser of TURING with our novel value prediction method achieves 75.1{\%} execution accuracy, and 78.3{\%} top-5 beam execution accuracy on the Spider validation set (Yu et al., 2018b). To benefit from the higher beam accuracy, we design an interactive system where the SQL hypotheses in the beam are explained step-by-step in natural language, with their differences highlighted. The user can then compare and judge the hypotheses to select which one reflects their intention if any. The English explanations of SQL queries in TURING are produced by our high-precision natural language generation system based on synchronous grammars.",
+}
+
+@inproceedings{huang-etal-2021-globally,
+abbr={Workshop},
+    title = "A Globally Normalized Neural Model for Semantic Parsing",
+    author = {Huang, Chenyang  and
+      Yang, Wei  and
+      Cao, Yanshuai  and
+      Za{\"\i}ane, Osmar  and
+      Mou, Lili},
+    booktitle = "Proceedings of the 5th Workshop on Structured Prediction for NLP (SPNLP 2021)",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.spnlp-1.7",
+    doi = "10.18653/v1/2021.spnlp-1.7",
+    pages = "61--66",
+    html={https://aclanthology.org/2021.spnlp-1.7/},
+    abstract = "In this paper, we propose a globally normalized model for context-free grammar (CFG)-based semantic parsing. Instead of predicting a probability, our model predicts a real-valued score at each step and does not suffer from the label bias problem. Experiments show that our approach outperforms locally normalized models on small datasets, but it does not yield improvement on a large dataset.",
+}
+
+
 
 @InProceedings{pmlr-v108-cao20a,
 abbr={AISTATS},
@@ -128,7 +196,6 @@ abbr={ACL},
     abstract = {Coherence is an important aspect of text quality and is crucial for ensuring its readability. One important limitation of existing coherence models is that training on one domain does not easily generalize to unseen categories of text. Previous work advocates for generative models for cross-domain generalization, because for discriminative models, the space of incoherent sentence orderings to discriminate against during training is prohibitively large. In this work, we propose a local discriminative neural model with a much smaller negative sampling space that can efficiently learn against incorrect orderings. The proposed coherence model is simple in structure, yet it significantly outperforms previous state-of-art methods on a standard benchmark dataset on the Wall Street Journal corpus, as well as in multiple new challenging settings of transfer to unseen categories of discourse on Wikipedia articles.},
     arxiv={1905.11912},
     code={https://github.com/BorealisAI/cross_domain_coherence},
-    selected={true},
 }
 
 @article{wen2018few,
