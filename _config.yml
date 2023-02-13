@@ -2,20 +2,19 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Yanshuai Cao's Academic Site # the website title (if blank, full name will be used instead)
-first_name: Yanshuai
+title: Alexandra Jabbour's Academic Site # the website title (if blank, full name will be used instead)
+first_name: Alexandra
 middle_name:
-last_name: Cao
-chinese_name: 曹颜帅
-email: caoy@cs.toronto.edu
+last_name: Jabbour
+email: alexandra.jabbour@umontreal.ca
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Yanshuai Cao's Academic Site; 曹颜帅个人学术网站; machine learning, computer vision, natural language processing, deep learning; 机器学习, 计算机视觉, 自然语言处理, 深度学习.
+  Alexandra Jabbour's Academic Site
 footer_text: >
   Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   
 
-url: https://yanshuaicao.github.io # the base hostname & protocol for your site
+url: https://alexandrajabbour.github.io # the base hostname & protocol for your site
 baseurl: / # the subpath of your site, e.g. /blog/
 last_updated: true # set to true if you want to display last updated in the footer
 
@@ -40,10 +39,10 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: yanshuaicao
-twitter_username: yanshuaicao
-linkedin_username: yanshuai-cao
-scholar_userid: RTVRTSsAAAAJ&hl
+github_username: alexandrajabbour
+twitter_username: alexjabbour
+linkedin_username: 
+scholar_userid: 
 orcid_id: # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
@@ -54,13 +53,13 @@ keybase_username: # your keybase user name
 
 contact_note: >
 
-google_analytics: G-LHJEYX8W7Z # out your google-analytics code
+google_analytics:  # out your google-analytics code
 
 # -----------------------------------------------------------------------------
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name:  Blog # your blog must have a name for it to show up in the nav bar
+blog_name:   # your blog must have a name for it to show up in the nav bar
 blog_description: #a simple whitespace theme for academics
 permalink: /blog/:year/:title/
 
@@ -129,7 +128,7 @@ plugins:
 
 scholar:
 
-  last_name: Cao
+  last_name: Jabbour
 
   style: apa
   locale: en
@@ -166,7 +165,7 @@ show_social_icons:        true
 
 cv:  
   enable: false
-  url: cv_yanshuaicao.pdf
+  url: cv_jabbour.pdf
 
 # -----------------------------------------------------------------------------
 # Library versions
