@@ -189,13 +189,18 @@
     
     <footer class="fixed-bottom">
       <div class="container d-flex justify-content-between align-items-center">
-        <!-- CSIC Logo with link -->
         <a href="https://www.csic.es" target="_blank">
-          <img src="/assets/img/Logotipo_del_CSIC.svg.png" alt="CSIC Logo" class="csic-logo">
+          <img src=/assets/img/Logotipo_del_CSIC.svg.png" alt="CSIC Logo" class="csic-logo">
         </a>
-        <!-- Copyright Text -->
         <div>© 2025 Jorge M. Fernandes</div>
       </div>
+      <style>
+          footer .csic-logo {
+              height: 20px; /* Makes the logo very small */
+              width: auto; /* Maintains the aspect ratio */
+              margin-right: 10px; /* Adds spacing between the logo and text */
+          }
+      </style>
     </footer>
 
 
