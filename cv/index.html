@@ -214,13 +214,21 @@ If the embedded version does not work, you can download a copy <a href="/assets/
     <!-- Footer -->
 
     
-<footer class="fixed-bottom">
-  <div class="container mt-0">
-    © 2025 Jorge M. Fernandes
-
-    
-  </div>
-</footer>
+    <footer class="fixed-bottom">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div>© 2025 Jorge M. Fernandes</div>
+        <a href="https://www.csic.es" target="_blank">
+          <img src="/assets/img/Logotipo_del_CSIC.svg.png" alt="CSIC Logo" class="csic-logo">
+        </a>
+      </div>
+      <style>
+          footer .csic-logo {
+              height: 20px; /* Makes the logo very small */
+              width: auto; /* Maintains the aspect ratio */
+              margin-right: 10px; /* Adds spacing between the logo and text */
+          }
+      </style>
+    </footer>
 
 
 
