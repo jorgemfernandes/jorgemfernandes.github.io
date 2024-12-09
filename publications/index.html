@@ -2748,36 +2748,22 @@
     <h2>2011</h2>
   </div>
   <style>
-    .year-section {
-      text-align: center;
-      margin: 20px 0; /* Adds space around the section */
-    }
-    
-    .year-section h2 {
-      font-size: 1.5em;
-      position: relative;
-      display: inline-block; /* Makes the heading fit its content */
-      margin: 0;
-    }
-    
-    .year-section h2::before,
-    .year-section h2::after {
-      content: '';
-      position: absolute;
-      top: 50%; /* Aligns with the vertical center of the text */
-      width: 120px; /* Line width */
-      height: 1px;
-      background-color: #ccc;
-    }
-    
-    .year-section h2::before {
-      left: -140px; /* Positions the line to the left */
-    }
-    
-    .year-section h2::after {
-      right: -140px; /* Positions the line to the right */
-    }
-    </style>
+  .year-section h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+  }
+  .year-section h2::before,
+.year-section h2::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 100px; /* Adjust this value to make the lines wider */
+  height: 1px;
+  background-color: #ccc;
+}
+  </style>
 
 	    
       
