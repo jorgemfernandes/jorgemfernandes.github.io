@@ -2745,14 +2745,35 @@
 <li>
 
   <div class="year-section">
-    <h2>2011</h2>
+    <h2>2022</h2> 
   </div>
+  
   <style>
   .year-section h2 {
     font-size: 1.5em;
     margin-top: 20px;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 5px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .year-section h2::before,
+  .year-section h2::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 100px; /* Adjust this value to make the lines wider */
+    height: 1px;
+    background-color: #ccc;
+  }
+  
+  .year-section h2::before {
+    left: 0;
+    transform: translateX(-110%);
+  }
+  
+  .year-section h2::after {
+    right: 0;
+    transform: translateX(110%);
   }
   </style>
 
